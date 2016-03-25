@@ -209,14 +209,15 @@ let g:ctrlp_regexp = 1
 "对搜索的设置
 map gt :call Search_Word()<CR>:copen<CR>
 map gw :call Search_Word1()<CR>:copen<CR>
+vnoremap gs :<C-u>call VisualStarSearchSet('/')<CR>:execute 'noautocmd vimgrep /' . @/ . '/ ~/server/trunk/sgq/**/*.cpp  ~/server/trunk/sgq/**/*.h'<CR>:copen<CR>)
 
 function Search_Word()
 let w = expand("<cword>") " 在当前光标位置抓词
-execute "vimgrep " . '/\<' . w . '\>/' . " ~/newsg/trunk/sgq/**/*.cpp ~/newsg/trunk/sgq/**/*.h"
+execute "noautocmd vimgrep " . '/\<' . w . '\>/' . " ~/server/trunk/sgq/**/*.cpp ~/server/trunk/sgq/**/*.h"
 endfunction
 function Search_Word1()
 let w = expand("<cword>") " 在当前光标位置抓词
-execute "vimgrep " . '/\<' . w . '\>/' . " ./**/*.cpp  ./**/*.h"
+execute "noautocmd vimgrep " . '/\<' . w . '\>/' . " ./**/*.cpp  ./**/*.h"
 endfunction
 
 " Keybindings for plugin toggle
