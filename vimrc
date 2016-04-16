@@ -70,6 +70,9 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+"let g:TSS = ['nodejs','tss']
+au BufRead,BufNewFile *.ts        setlocal filetype=typescript
+
 "-----------------
 " Plugin settings
 "-----------------
@@ -213,11 +216,11 @@ vnoremap gs :<C-u>call VisualStarSearchSet('/')<CR>:execute 'noautocmd vimgrep /
 
 function Search_Word()
 let w = expand("<cword>") " 在当前光标位置抓词
-execute "noautocmd vimgrep " . '/\<' . w . '\>/' . " ~/server/trunk/sgq/**/*.cpp ~/server/trunk/sgq/**/*.h"
+execute "vimgrep " . '/\<' . w . '\>/' . " ~/server/trunk/sgq/**/*.cpp ~/server/trunk/sgq/**/*.h"
 endfunction
 function Search_Word1()
 let w = expand("<cword>") " 在当前光标位置抓词
-execute "noautocmd vimgrep " . '/\<' . w . '\>/' . " ./**/*.cpp  ./**/*.h"
+execute "vimgrep " . '/\<' . w . '\>/' . " ./**/*.cpp  ./**/*.h"
 endfunction
 
 " Keybindings for plugin toggle

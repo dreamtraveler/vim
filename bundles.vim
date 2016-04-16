@@ -56,6 +56,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/winmanager'
 Plugin 'vim-scripts/a.vim'
+Plugin 'bronson/vim-visual-star-search'
 
 "-------------
 " Other Utils
@@ -81,6 +82,9 @@ Plugin 'nono/jquery.vim'
 " Plugin 'groenewege/vim-less'
 " Plugin 'wavded/vim-stylus'
 " Plugin 'nono/vim-handlebars'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'clausreinke/typescript-tools.vim'
 
 "------- markup language -------
 Plugin 'tpope/vim-markdown'
