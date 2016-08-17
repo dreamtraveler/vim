@@ -18,7 +18,7 @@ syntax on
 " highlight current line
 " au WinLeave * set nocursorline nocursorcolumn
 " au WinEnter * set cursorline cursorcolumn
-" set cursorline cursorcolumn
+set cursorline
 
 " search
 " set incsearch
@@ -55,13 +55,13 @@ set shiftwidth=4    " indent width
 set expandtab
 " set textwidth=79
 
-autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
-autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
-autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
+autocmd FileType ruby setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
+autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
+autocmd FileType coffee,javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
-autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
+autocmd FileType sass,scss,css setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 
 " syntax support
 autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
@@ -445,3 +445,6 @@ endfunction
 autocmd FileType * call g:autoCompleteCurlyBraces()
 inoremap [ []<ESC>i
 inoremap ( ()<ESC>i
+
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1

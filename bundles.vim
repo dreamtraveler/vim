@@ -57,6 +57,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/winmanager'
 Plugin 'vim-scripts/a.vim'
 Plugin 'bronson/vim-visual-star-search'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'kshenoy/vim-signature'
 
 "-------------
 " Other Utils
@@ -96,11 +98,15 @@ Plugin 'tpope/vim-markdown'
 "------- Go ----------
 " Plugin 'jnwhiteh/vim-golang'
 
+"------- Lisp --------
+Plugin 'kovisoft/slimv'
+
 "------- FPs ------
 Plugin 'kien/rainbow_parentheses.vim'
 " Plugin 'wlangstroth/vim-racket'
 " Plugin 'vim-scripts/VimClojure'
 " Plugin 'rosstimson/scala-vim-support'
+"
 
 "--------------
 " Color Schemes
