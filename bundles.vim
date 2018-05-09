@@ -11,9 +11,9 @@ Plugin 'gmarik/vundle'
 "------------------
 " golang
 "------------------
-Plugin 'nsf/gocode'
+"Plugin 'nsf/gocode'
 "Plugin 'dgryski/vim-godef'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 
 "------------------
 " Code Completions
