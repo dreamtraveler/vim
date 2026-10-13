@@ -95,15 +95,17 @@ let g:lightline = {
 " Basic cursor movement and deletion keybindings from emacs, for vim.
 
 " insert mode
-imap <C-b> <Left>
-imap <C-f> <Right>
-imap <C-p> <Up>
-imap <C-n> <Down>
-imap <C-a> <C-o>:call <SID>home()<CR>
-imap <C-e> <End>
-imap <C-d> <Del>
-imap <C-h> <BS>
-imap <C-k> <C-r>=<SID>kill_line()<CR>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-a> <C-o>:call <SID>home()<CR>
+inoremap <C-e> <End>
+inoremap <C-d> <Del>
+inoremap <C-h> <BS>
+inoremap <C-k> <C-r>=<SID>kill_line()<CR>
+inoremap <Esc>b <C-o>b
+inoremap <Esc>f <C-o>e
 
 " command line mode
 cmap <C-p> <Up>
